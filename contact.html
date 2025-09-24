@@ -6,7 +6,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AK Salon Website</title>
+    <title>Triveni Studio</title>
 
     <!-- adding css  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -23,16 +23,14 @@
 <body>
 
     <header>
-        <a href="#" class="logo">AK Beauty Salon</a>
+        <a href="./index.html" class="logo">Triveni Studio</a>
         <div class="menuToggle"></div>
         <nav>
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./services.html">Services</a></li>
-                <li><a href="./protfolio.html">protfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-                <li><a href="#" id="NavNum">+91 3859023453</a></li>
+                <li><a href="tel:+919930866055" id="NavNum">+91 9930866055</a></li>
             </ul>
         </nav>
     </header>
@@ -58,11 +56,12 @@
                 <input type="text" name="" id="" placeholder="Name" required>
                 <input type="number" name="" id="" placeholder="Number" required>
                 <input type="email" name="" id="" placeholder="Email" required>
-                <select name="#" id="">
-                    <option value="#" disabled>Select Services</option>
-                    <option value="#">Clean Nail Art</option>
-                    <option value="#">Hair Styling</option>
-                    <option value="#">Full Body Massage</option>
+                <label for="serviceSelect" class="visually-hidden">Select a Service</label>
+                <select name="service" id="serviceSelect" required>
+                    <option value="" disabled selected>Select Services</option>
+                    <option value="clean-nail-art">Clean Nail Art</option>
+                    <option value="hair-styling">Hair Styling</option>
+                    <option value="full-body-massage">Full Body Massage</option>
                 </select>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                 <button type="submit">Send Request</button>
@@ -71,76 +70,17 @@
 
         <div class="map">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.5149208586167!2d77.08639887464352!3d28.494151690352858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d193845155555%3A0x60d85750634bd7b2!2sGoogle%20DLF%20Tower%208C!5e0!3m2!1sen!2sin!4v1691352060091!5m2!1sen!2sin"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.488005183671!2d72.87123747530761!3d19.17387628205095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b7b854f55777%3A0xb27f6587e33521a9!2sTriveni%20Skin%20%26%20Hair%20Studio!5e0!3m2!1sen!2sin!4v1758600198511!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                class="contact-map-iframe"
+                allowfullscreen=""
+                loading="lazy"
+                title="Google Map location of Triveni Studio"></iframe>
         </div>
     </section>
 
-    <div class="beforefooter">
-        <div class="box">
-            <div class="logo">Ak Beauty Salon</div>
-            <div class="bf-text">AnmolKeCode</div>
-            <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum ipsam sit magni et
-                consequatur, tenetur ab doloremque totam necessitatibus inventore optio qui? Inventore vel quibusdam
-                exercitationem, nulla asperiores fugiat totam!</p>
-
-            <div class="bf-text">Subscribe For Offers</div>
-
-            <div class="subscribe">
-                <input type="text" name="" id="">
-                <button class="btn">subscribe</button>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="bf-text">Quick Links</div>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./about.html">About</a></li>
-                <li><a href="./services.html">Services</a></li>
-                <li><a href="./protfolio.html">protfolio</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-
-            <div class="bf-text">Follow Us</div>
-            <div class="icons">
-                <a href="#" class="fa-brands fa-facebook-f"></a>
-                <a href="#" class="fa-brands fa-google"></a>
-                <a href="#" class="fa-brands fa-instagram"></a>
-                <a href="#" class="fa-brands fa-youtube"></a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="bf-text">Say Hi! </div>
-            <ul class="SayHi">
-                <li><a href="./index.html">info@example.com</a></li>
-                <li><a href="./about.html">contact@example.com</a></li>
-            </ul>
-
-            <div class="bf-text">Call Us</div>
-            <ul class="SayHi">
-                <li>Phone :+1 2334325532</li>
-                <li>Toll Free:+1 2334325532</li>
-            </ul>
-
-            <div class="bf-text">Find Us</div>
-
-            <div class="address">
-                123 Fifth Avenue, Opp Hut, New York, USA
-            </div>
-
-        </div>
-    </div>
-
-
-    <footer>
-        <div class="fbox">Copyright &copy; 2023 AK Beauty Salon</div>
-        <div class="fbox">Powered By AK Beauty Salon</div>
-    </footer>
-
-    <script src="./js/script.js"></script>
+   <script src="./js/script.js"></script>
 </body>
 
 </html>
